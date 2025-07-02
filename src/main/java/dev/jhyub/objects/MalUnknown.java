@@ -10,6 +10,7 @@ public class MalUnknown extends MalObject {
         this.value = token;
     }
 
+    @Override
     public String print() {
         return "UNKNOWN(" + value + ")";
     }

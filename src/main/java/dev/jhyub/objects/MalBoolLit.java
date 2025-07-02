@@ -11,6 +11,7 @@ public class MalBoolLit extends MalObject {
         this.value = Boolean.parseBoolean(value);
     }
 
+    @Override
     public String print() {
         return String.valueOf(value);
     }

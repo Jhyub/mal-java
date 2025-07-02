@@ -7,6 +7,7 @@ public class MalSymbol extends MalObject {
         this.name = name;
     }
 
+    @Override
     public String print() {
         return this.name;
     }

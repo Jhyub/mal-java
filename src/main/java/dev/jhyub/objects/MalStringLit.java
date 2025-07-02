@@ -8,6 +8,7 @@ public class MalStringLit extends MalObject {
 
     }
 
+    @Override
     public String print() {
         return "\"" + value + "\"";
     }

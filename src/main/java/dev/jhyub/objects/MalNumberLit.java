@@ -24,6 +24,7 @@ public class MalNumberLit extends MalObject {
         }
     }
 
+    @Override
     public String print() {
         if (isInteger) {
             return value.intValue() + "";
