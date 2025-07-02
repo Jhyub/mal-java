@@ -50,6 +50,14 @@ public class Parser {
             return new MalStringLit(tok);
         }
 
+        if (tok.equals("nil")) {
+            return new MalNilLit();
+        }
+
+        if (tok.equals("true") || tok.equals("false")) {
+            return new MalBoolLit(tok);
+        }
+
         try {
             MalNumberLit mnl = new MalNumberLit(tok);
             return mnl;
