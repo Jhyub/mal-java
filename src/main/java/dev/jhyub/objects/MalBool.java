@@ -1,13 +1,13 @@
 package dev.jhyub.objects;
 
-public class MalBoolLit extends MalObject {
+public class MalBool extends MalObject {
     boolean value;
 
-    public MalBoolLit(boolean value) {
+    public MalBool(boolean value) {
         this.value = value;
     }
 
-    public MalBoolLit(String value) {
+    public MalBool(String value) {
         this.value = Boolean.parseBoolean(value);
     }
 

@@ -47,19 +47,19 @@ public class Parser {
         String tok = tokens.get(ptr++);
 
         if (tok.startsWith("\"") && tok.endsWith("\"")) {
-            return new MalStringLit(tok);
+            return new MalString(tok);
         }
 
         if (tok.equals("nil")) {
-            return new MalNilLit();
+            return new MalNil();
         }
 
         if (tok.equals("true") || tok.equals("false")) {
-            return new MalBoolLit(tok);
+            return new MalBool(tok);
         }
 
         try {
-            MalNumberLit mnl = new MalNumberLit(tok);
+            MalNumber mnl = new MalNumber(tok);
             return mnl;
         } catch (NumberFormatException e) {
             if (!Character.isDigit(tok.charAt(0))) {

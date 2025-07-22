@@ -1,20 +1,20 @@
 package dev.jhyub.objects;
 
-public class MalNumberLit extends MalObject {
+public class MalNumber extends MalObject {
     Number value;
     boolean isInteger;
 
-    public MalNumberLit(int value) {
+    public MalNumber(int value) {
         this.value = value;
         this.isInteger = true;
     }
 
-    public MalNumberLit(double value) {
+    public MalNumber(double value) {
         this.value = value;
         this.isInteger = false;
     }
 
-    public MalNumberLit(String value) throws NumberFormatException {
+    public MalNumber(String value) throws NumberFormatException {
         try {
             this.value = Integer.valueOf(value);
             this.isInteger = true;

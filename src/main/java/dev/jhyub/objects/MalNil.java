@@ -1,7 +1,7 @@
 package dev.jhyub.objects;
 
-public class MalNilLit extends MalObject {
-    public MalNilLit() {}
+public class MalNil extends MalObject {
+    public MalNil() {}
 
     @Override
     public String print() {
