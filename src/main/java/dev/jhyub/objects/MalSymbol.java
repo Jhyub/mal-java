@@ -11,4 +11,8 @@ public class MalSymbol extends MalObject {
     public String print() {
         return this.name;
     }
+
+    public String getName() {
+        return name;
+    }
 }

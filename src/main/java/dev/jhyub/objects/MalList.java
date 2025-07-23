@@ -22,4 +22,8 @@ public class MalList extends MalObject {
     public void append(MalObject item) {
         items.add(item);
     }
+
+    public List<MalObject> getItems() {
+        return items;
+    }
 }
